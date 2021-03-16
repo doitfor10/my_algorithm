@@ -6,12 +6,14 @@ coin_list = []
 
 for _ in range(N):
   coin = int(sys.stdin.readline())
-  if K>=coin:   # 나눌 수 없는 동전들은 빼고 받음.
+  if K>=coin:   # 금액보다 큰 동전들은 빼고 받음.
     coin_list.append(coin)
 
 coin_count = 0
 
 for n in range(1,len(coin_list)+1):
+  if K == 0:
+    break
   divide = coin_list[-n] #큰 동전부터 비교.
   divide_coin = K//divide #4
   coin_count+= divide_coin
