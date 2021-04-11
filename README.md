@@ -1,2 +1,2 @@
-# my_algorithm
- my algorithm test
+### 항해99 Chapter2) 알고리즘 공부
+ 알고리즘 풀이입니다.
